@@ -6,12 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
-
-    "server":"npm run start --prefix server",
-    "server-install":"npm install --prefix server",
+    "server": "npm run start --prefix server",
+    "server-install": "npm install --prefix server",
     "build": "concurrently \"next build \" \"npm run server\"",
+    "build-client":"next build",
     "start": "concurrently \"npm run dev \" \"npm run server\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix server  && npm run build --prefix server && next build" 
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix server  && npm run build --prefix server && next build"
   },
   "keywords": [],
   "author": "",
@@ -53,6 +53,8 @@
     "prettier": "^2.4.1",
     "style-loader": "^3.3.1",
     "tailwindcss": "^2.2.17",
-    "web-vitals": "^2.1.2"
+    "web-vitals": "^2.1.2",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
   }
 }
