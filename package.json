@@ -12,6 +12,7 @@
     "build-client":"next build",
     "start": "concurrently \"npm run dev \" \"npm run server\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false next build && npm install --prefix server  && npm run build --prefix server"
+
   },
   "keywords": [],
   "author": "",
