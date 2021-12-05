@@ -6,11 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
+
     "server":"npm run start --prefix server",
     "server-install":"npm install --prefix server",
     "build": "concurrently \"next build \" \"npm run server\"",
     "start": "concurrently \"npm run dev \" \"npm run server\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix server  && npm run build --prefix server" 
+
+
   },
   "keywords": [],
   "author": "",
