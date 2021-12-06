@@ -8,7 +8,9 @@ server/node_modules
 server/package-lock.json
 /.next/cache/webpack/client-development/
 /.next/cache/webpack/client-development
-
+server/
+/server
+server
 # Logs
 logs
 *.log

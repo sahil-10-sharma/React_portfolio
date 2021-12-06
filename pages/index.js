@@ -110,7 +110,7 @@ render () {
        
         <section className="background bg-night element border-r-10 border-l-10 border-white" id="Skills">
         <div className="skills content ">             
-         {
+
         this.props.skills ?
         this.props.skills.map((skill, index) => {
           return (
@@ -122,7 +122,7 @@ render () {
             <span>An error occurred.</span>
         </div>
         }
-         
+
          
            <h4 className="text-white">Skills</h4>
           <div id="skillcon" className="skill-container flex flex-row w-full">
